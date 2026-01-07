@@ -8,7 +8,7 @@
 ## 1. Database Setup
 
 - **Database**: Neo4j
-- **URI**: bolt://127.0.0.1:7687
+- **URI**: bolt://localhost:7687
 - **User**: neo4j
 - **Connection Status**: ✓ Connected
 

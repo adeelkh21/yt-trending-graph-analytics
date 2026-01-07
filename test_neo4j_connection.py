@@ -8,10 +8,10 @@ import sys
 
 # Configuration
 # Neo4j Desktop Local Database
-NEO4J_URI = "bolt://127.0.0.1:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "adeel123"
-NEO4J_DATABASE = "neo4j"
+NEO4J_URI = "ADD_YOUR_BOLT_URI_HERE"  # e.g., "bolt://
+NEO4J_USER = "ADD_YOUR_USERNAME_HERE"
+NEO4J_PASSWORD = "ADD_YOUR_PASSWORD_HERE"
+NEO4J_DATABASE = "ADD_YOUR_DATABASE_NAME_HERE"  # Not used in this script but can be useful for reference
 
 print("=" * 80)
 print("NEO4J CONNECTION TEST")

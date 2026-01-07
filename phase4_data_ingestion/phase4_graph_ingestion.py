@@ -16,10 +16,10 @@ warnings.filterwarnings('ignore')
 
 # Configuration
 # Neo4j Desktop Local Database
-NEO4J_URI = "bolt://127.0.0.1:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "adeel123"
-NEO4J_DATABASE = "neo4j"
+NEO4J_URI = os.getenv('NEO4J_URI', 'bolt://localhost:7687')
+NEO4J_USER = os.getenv('NEO4J_USER', 'neo4j')
+NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD', 'your_password_here')
+NEO4J_DATABASE = os.getenv('NEO4J_DATABASE', 'neo4j')
 BATCH_SIZE = 1000  # Number of rows to process per batch
 
 # Country name mapping
@@ -55,7 +55,7 @@ def connect_to_neo4j(uri, user, password):
         print("  1. Neo4j Desktop is installed and running")
         print("  2. Database is started in Neo4j Desktop (green status)")
         print("  3. Credentials are correct (URI, username, password)")
-        print("  4. Database is accessible at bolt://127.0.0.1:7687")
+        print("  4. Database is accessible at bolt://localhost:7687")
         print("\nTo change connection settings, modify NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD in the script")
         return None
 

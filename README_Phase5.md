@@ -13,10 +13,10 @@ Phase 5 executes comprehensive queries on the Neo4j graph database, generates vi
 
 ### Environment Variables (Optional)
 You can set these environment variables or the script will use defaults:
-- `NEO4J_URI`: Neo4j connection URI (default: `bolt://127.0.0.1:7687`)
-- `NEO4J_USER`: Neo4j username (default: `neo4j`)
-- `NEO4J_PASSWORD`: Neo4j password (default: `adeel123`)
-- `NEO4J_DATABASE`: Neo4j database name (default: `neo4j`)
+- `NEO4J_URI`: Neo4j connection URI (default: ``)
+- `NEO4J_USER`: Neo4j username (default: ``)
+- `NEO4J_PASSWORD`: Neo4j password (default: ``)
+- `NEO4J_DATABASE`: Neo4j database name (default: ``)
 
 ### Script Parameters
 - `QUERY_TIMEOUT`: Query timeout in seconds (default: 60)

@@ -33,10 +33,10 @@ sns.set_palette("husl")
 # ============================================================================
 
 # Read from environment variables or use defaults
-NEO4J_URI = os.getenv('NEO4J_URI', 'bolt://127.0.0.1:7687')
-NEO4J_USER = os.getenv('NEO4J_USER', 'neo4j')
-NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD', 'adeel123')
-NEO4J_DATABASE = os.getenv('NEO4J_DATABASE', 'neo4j')
+NEO4J_URI = os.getenv('NEO4J_URI', 'AddYour_Bolt_URI_Here')  # e.g., "bolt://
+NEO4J_USER = os.getenv('NEO4J_USER', 'AddYour_Username_Here')
+NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD', 'AddYour_Password_Here')
+NEO4J_DATABASE = os.getenv('NEO4J_DATABASE', 'AddYour_Database_Name_Here')
 
 # Execution parameters
 QUERY_TIMEOUT = 60

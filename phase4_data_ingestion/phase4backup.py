@@ -15,11 +15,11 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Configuration
-# Neo4j Aura Cloud Database
-NEO4J_URI = "neo4j+s://bc0353c7.databases.neo4j.io"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "qUnb-aZnlYcrpURPPlg7vspi0U7QB--OjeB12b1D6Bg"
-NEO4J_DATABASE = "neo4j"
+# Neo4j Aura Cloud Database (EXAMPLE - DO NOT USE REAL CREDENTIALS)
+NEO4J_URI = os.getenv('NEO4J_URI', 'neo4j+s://xxxxx.databases.neo4j.io')
+NEO4J_USER = os.getenv('NEO4J_USER', 'neo4j')
+NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD', 'your_password_here')
+NEO4J_DATABASE = os.getenv('NEO4J_DATABASE', 'neo4j')
 BATCH_SIZE = 1000  # Number of rows to process per batch
 
 # Country name mapping
