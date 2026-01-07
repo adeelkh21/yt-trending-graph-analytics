@@ -7,7 +7,6 @@ This phase sets up a Neo4j graph database and ingests the cleaned YouTube Trendi
 - Phase 2 and Phase 3 completed
 - `youtube_trending_cleaned.csv` must be present
 - Neo4j installed and running
-- Virtual environment activated with required packages
 
 ## Neo4j Installation and Setup
 
@@ -32,7 +31,6 @@ This phase sets up a Neo4j graph database and ingests the cleaned YouTube Trendi
    python phase4_graph_ingestion.py
    ```
 
-**No local installation required!** The scripts are already configured to use your Aura instance.
 
 ### Option 1: Neo4j Desktop (Local Installation - Alternative)
 
@@ -87,16 +85,6 @@ This phase sets up a Neo4j graph database and ingests the cleaned YouTube Trendi
    sudo systemctl enable neo4j
    ```
 
-### Option 3: Docker (Alternative)
-
-```bash
-docker run \
-    --name neo4j-youtube \
-    -p7474:7474 -p7687:7687 \
-    -e NEO4J_AUTH=neo4j/password \
-    -e NEO4J_dbms_default__database=youtube_trending_graph \
-    neo4j:latest
-```
 
 ## Configuration
 
@@ -119,25 +107,13 @@ NEO4J_PASSWORD = "your_password"      # Change to your password
 
 ## Setup Instructions
 
-### 1. Activate Virtual Environment
-```bash
-# On Windows (PowerShell)
-venv\Scripts\Activate.ps1
-
-# On Windows (Command Prompt)
-venv\Scripts\activate.bat
-
-# On Linux/Mac
-source venv/bin/activate
-```
-
-### 2. Verify Neo4j Connection
+### 1. Verify Neo4j Connection
 ```bash
 # Test connection (optional)
 python -c "from py2neo import Graph; g = Graph('bolt://localhost:7687', auth=('neo4j', 'password')); print('Connected!' if g else 'Failed')"
 ```
 
-### 3. Run Phase 4 Ingestion
+### 2. Run Phase 4 Ingestion
 ```bash
 python phase4_graph_ingestion.py
 ```
@@ -269,14 +245,6 @@ Creates indexes on:
 
 See `phase4_query_examples.txt` for detailed query examples.
 
-## Next Steps
-
-After completing Phase 4, proceed to:
-- **Phase 5**: Query Execution and Visualization
-- Test queries from query examples
-- Analyze graph patterns
-- Create custom visualizations
-
 ## Notes
 
 - The script processes data in batches for memory efficiency
@@ -284,12 +252,3 @@ After completing Phase 4, proceed to:
 - Video nodes are uniquely identified by video_id + country
 - All relationships are bidirectional where appropriate
 - Indexes are created before data ingestion for performance
-
-## Support
-
-For issues or questions:
-1. Check Neo4j logs: `neo4j.log`
-2. Verify data quality in cleaned dataset
-3. Check connection settings
-4. Review error messages in ingestion log
-

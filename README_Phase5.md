@@ -193,14 +193,6 @@ The final report (`phase5_query_report.md`) includes:
 - Verify data format
 - Check file permissions
 
-## Next Steps
-
-After Phase 5 completes:
-1. Review generated reports
-2. Analyze visualizations
-3. Export data for further analysis
-4. Create custom queries as needed
-5. Share results with stakeholders
 
 ## Notes
 
