@@ -6,23 +6,8 @@ This phase focuses on cleaning, transforming, and preparing the YouTube Trending
 ## Prerequisites
 - Phase 1 must be completed
 - All CSV and JSON files must be present in the directory
-- Virtual environment activated with required packages installed
 
-## Setup Instructions
-
-### 1. Activate Virtual Environment
-```bash
-# On Windows (PowerShell)
-venv\Scripts\Activate.ps1
-
-# On Windows (Command Prompt)
-venv\Scripts\activate.bat
-
-# On Linux/Mac
-source venv/bin/activate
-```
-
-### 2. Run Phase 2 Preprocessing
+## 2. Run Phase 2 Preprocessing
 ```bash
 python phase2_preprocessing.py
 ```
@@ -78,11 +63,6 @@ python phase2_preprocessing.py
 - Saves cleaned dataset as `youtube_trending_cleaned.csv`
 - Saves summary report as `phase2_preprocessing_report.txt`
 
-## Expected Output Files
-
-1. **youtube_trending_cleaned.csv** - Cleaned and preprocessed dataset
-2. **phase2_preprocessing_report.txt** - Summary report with statistics
-
 ## Key Features
 
 ### Data Quality Improvements
@@ -108,12 +88,6 @@ python phase2_preprocessing.py
 - All categorical fields valid
 - Date components consistent
 
-## Next Steps
-
-After completing Phase 2, proceed to:
-- **Phase 3**: Exploratory Data Analysis (EDA)
-- Use the cleaned dataset for visualization and statistical analysis
-
 ## Troubleshooting
 
 ### Common Issues
@@ -122,10 +96,4 @@ After completing Phase 2, proceed to:
 2. **Date Parsing Errors**: Check date formats in source data
 3. **Missing JSON Files**: Ensure all category JSON files are present
 4. **Duplicate Handling**: Review aggregation strategy if needed
-
-## Performance Notes
-
-- Processing time: ~2-5 minutes depending on system
-- Memory usage: ~500MB - 1GB
-- Output file size: ~50-100MB (CSV)
 

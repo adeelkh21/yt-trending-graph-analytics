@@ -6,23 +6,8 @@ This phase performs comprehensive exploratory data analysis on the cleaned YouTu
 ## Prerequisites
 - Phase 2 must be completed
 - `youtube_trending_cleaned.csv` must be present
-- Virtual environment activated with required packages installed
 
-## Setup Instructions
-
-### 1. Activate Virtual Environment
-```bash
-# On Windows (PowerShell)
-venv\Scripts\Activate.ps1
-
-# On Windows (Command Prompt)
-venv\Scripts\activate.bat
-
-# On Linux/Mac
-source venv/bin/activate
-```
-
-### 2. Run Phase 3 EDA
+## Run Phase 3 EDA
 ```bash
 python phase3_eda.py
 ```
@@ -107,11 +92,6 @@ python phase3_eda.py
 4. **Correlations**: Relationships between engagement metrics
 5. **Tag Distribution**: Most common tags and their distribution
 
-## Next Steps
-
-After completing Phase 3, proceed to:
-- **Phase 4**: Graph Database Setup and Data Ingestion
-- Use insights from EDA to guide graph schema design
 
 ## Troubleshooting
 
@@ -120,10 +100,3 @@ After completing Phase 3, proceed to:
 1. **Memory Error**: If dataset is too large, process countries separately
 2. **Visualization Errors**: Check matplotlib/seaborn installation
 3. **Tags Parsing**: Tags are stored as strings in CSV, parsed automatically
-
-## Performance Notes
-
-- Processing time: ~5-10 minutes depending on system
-- Memory usage: ~1-2GB
-- Output file size: ~100-200MB (visualizations)
-
