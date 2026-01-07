@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "query": "A.1",
+      "csv": "phase5_query_results\\groupA_A1_top_categories.csv",
+      "viz": "phase5_visualizations\\groupA_A1_top_categories.png"
+    },
+    {
+      "query": "A.2",
+      "csv": "phase5_query_results\\groupA_A2_top_channels.csv",
+      "viz": "phase5_visualizations\\groupA_A2_top_channels.png"
+    },
+    {
+      "query": "A.3",
+      "csv": "phase5_query_results\\groupA_A3_videos_by_country.csv",
+      "viz": "phase5_visualizations\\groupA_A3_videos_by_country.png"
+    },
+    {
+      "query": "A.4",
+      "csv": "phase5_query_results\\groupA_A4_top_videos.csv",
+      "viz": "phase5_visualizations\\groupA_A4_top_videos.png"
+    },
+    {
+      "query": "A.5",
+      "csv": "phase5_query_results\\groupA_A5_engagement_by_category.csv",
+      "viz": "phase5_visualizations\\groupA_A5_engagement_by_category.png"
+    },
+    {
+      "query": "A.6",
+      "csv": "phase5_query_results\\groupA_A6_day_patterns.csv",
+      "viz": "phase5_visualizations\\groupA_A6_day_patterns.png"
+    }
+  ],
+  "timestamp": "2025-11-10T00:52:04.119983"
+}

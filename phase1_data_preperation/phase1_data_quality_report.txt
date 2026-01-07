@@ -1,0 +1,15 @@
+DATA QUALITY ISSUES REPORT
+================================================================================
+
+Generated: 2025-11-09 14:43:58.059617
+
+Total Rows: 158,098
+Total Columns: 20
+
+Missing Values:
+             Missing Count  Missing Percentage
+description           3039            1.922225
+
+Duplicates:
+Duplicate video_id: 137694
+Completely duplicate rows: 8869

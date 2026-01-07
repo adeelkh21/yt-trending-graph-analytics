@@ -1,0 +1,123 @@
+{
+  "start_time": "2025-11-10T00:56:40.200644",
+  "queries": [
+    {
+      "time": "2025-11-10T00:56:40.357368",
+      "description": "A.1: Top Categories",
+      "status": "success",
+      "duration_seconds": 0.054265,
+      "rows_returned": 17
+    },
+    {
+      "time": "2025-11-10T00:56:41.218313",
+      "description": "A.2: Top Channels",
+      "status": "success",
+      "duration_seconds": 0.17982,
+      "rows_returned": 20
+    },
+    {
+      "time": "2025-11-10T00:56:41.985239",
+      "description": "A.3: Videos by Country",
+      "status": "success",
+      "duration_seconds": 0.056508,
+      "rows_returned": 4
+    },
+    {
+      "time": "2025-11-10T00:56:42.433733",
+      "description": "A.4: Top Videos",
+      "status": "success",
+      "duration_seconds": 0.049084,
+      "rows_returned": 50
+    },
+    {
+      "time": "2025-11-10T00:56:43.148176",
+      "description": "A.5: Engagement by Category",
+      "status": "success",
+      "duration_seconds": 0.088525,
+      "rows_returned": 17
+    },
+    {
+      "time": "2025-11-10T00:56:43.867547",
+      "description": "A.6: Day Patterns",
+      "status": "success",
+      "duration_seconds": 0.150945,
+      "rows_returned": 7
+    },
+    {
+      "time": "2025-11-10T00:59:07.001495",
+      "description": "B.1: High Engagement Channels",
+      "status": "success",
+      "duration_seconds": 0.472595,
+      "rows_returned": 20
+    },
+    {
+      "time": "2025-11-10T00:59:08.044207",
+      "description": "B.2: Category by Country",
+      "status": "success",
+      "duration_seconds": 0.807458,
+      "rows_returned": 66
+    },
+    {
+      "time": "2025-11-10T00:59:09.741756",
+      "description": "B.3: Tag Co-occurrence",
+      "status": "success",
+      "duration_seconds": 3.339143,
+      "rows_returned": 100
+    },
+    {
+      "time": "2025-11-10T00:59:13.832770",
+      "description": "B.4: Cross-Country Videos",
+      "status": "success",
+      "duration_seconds": 0.520527,
+      "rows_returned": 50
+    },
+    {
+      "time": "2025-11-10T00:59:14.946152",
+      "description": "B.5: Channel Performance",
+      "status": "success",
+      "duration_seconds": 0.661034,
+      "rows_returned": 30
+    },
+    {
+      "time": "2025-11-10T00:59:20.072308",
+      "description": "C.1: Correlation Data",
+      "status": "success",
+      "duration_seconds": 0.589692,
+      "rows_returned": 10000
+    },
+    {
+      "time": "2025-11-10T00:59:21.291739",
+      "description": "C.2: Engagement Distribution",
+      "status": "success",
+      "duration_seconds": 0.91097,
+      "rows_returned": 50357
+    },
+    {
+      "time": "2025-11-10T00:59:22.737110",
+      "description": "C.3: Category-Country Network",
+      "status": "success",
+      "duration_seconds": 0.406026,
+      "rows_returned": 66
+    }
+  ],
+  "errors": [],
+  "checkpoints": [
+    {
+      "checkpoint": "Group A Complete",
+      "time": "2025-11-10T00:56:44.582318",
+      "files_generated": 6
+    },
+    {
+      "checkpoint": "Group B Complete",
+      "time": "2025-11-10T00:59:16.141649",
+      "files_generated": 5
+    },
+    {
+      "checkpoint": "Group C Complete",
+      "time": "2025-11-10T00:59:23.148621",
+      "files_generated": 3
+    }
+  ],
+  "end_time": "2025-11-10T00:59:23.369233",
+  "status": "complete"
+}

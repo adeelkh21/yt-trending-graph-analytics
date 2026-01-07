@@ -1,0 +1,46 @@
+{
+  "simple_queries": [
+    {
+      "name": "Top Categories by Video Count",
+      "query": "MATCH (v:Video)-[:VIDEO_BELONGS_TO_CATEGORY]->(c:Category) RETURN c.category_name, COUNT(v) as video_count ORDER BY video_count DESC LIMIT 10"
+    },
+    {
+      "name": "Top Channels by Average Engagement",
+      "query": "MATCH (ch:Channel)-[:CHANNEL_HAS_VIDEO]->(v:Video) RETURN ch.channel_title, AVG(v.engagement_ratio) as avg_engagement ORDER BY avg_engagement DESC LIMIT 10"
+    },
+    {
+      "name": "Videos by Country",
+      "query": "MATCH (v:Video)-[:VIDEO_TRENDING_IN_COUNTRY]->(co:Country) RETURN co.country_code, COUNT(v) as video_count ORDER BY video_count DESC"
+    },
+    {
+      "name": "Top Videos by Views",
+      "query": "MATCH (v:Video) RETURN v.video_id, v.title, v.views, v.country ORDER BY v.views DESC LIMIT 10"
+    },
+    {
+      "name": "Most Tagged Videos",
+      "query": "MATCH (v:Video)-[:VIDEO_HAS_TAG]->(t:Tag) RETURN v.video_id, v.title, COUNT(t) as tag_count ORDER BY tag_count DESC LIMIT 10"
+    }
+  ],
+  "complex_queries": [
+    {
+      "name": "Channels with High Engagement Videos",
+      "query": "\n                MATCH (ch:Channel)-[:CHANNEL_HAS_VIDEO]->(v:Video)\n                WHERE v.engagement_ratio > 0.1\n                RETURN ch.channel_title, \n                       COUNT(v) as high_engagement_videos,\n                       AVG(v.engagement_ratio) as avg_engagement,\n                       AVG(v.views) as avg_views\n                ORDER BY high_engagement_videos DESC\n                LIMIT 10\n            "
+    },
+    {
+      "name": "Category Performance by Country",
+      "query": "\n                MATCH (v:Video)-[:VIDEO_BELONGS_TO_CATEGORY]->(c:Category),\n                      (v)-[:VIDEO_TRENDING_IN_COUNTRY]->(co:Country)\n                RETURN co.country_code, \n                       c.category_name,\n                       COUNT(v) as video_count,\n                       AVG(v.views) as avg_views,\n                       AVG(v.engagement_ratio) as avg_engagement\n                ORDER BY co.country_code, video_count DESC\n            "
+    },
+    {
+      "name": "Tag Co-occurrence with Categories",
+      "query": "\n                MATCH (v:Video)-[:VIDEO_BELONGS_TO_CATEGORY]->(c:Category),\n                      (v)-[:VIDEO_HAS_TAG]->(t:Tag)\n                WITH c.category_name as category, t.tag_name as tag, COUNT(v) as co_count\n                WHERE co_count > 10\n                RETURN category, tag, co_count\n                ORDER BY category, co_count DESC\n                LIMIT 50\n            "
+    },
+    {
+      "name": "Day-of-Week Trending Patterns",
+      "query": "\n                MATCH (v:Video)-[:VIDEO_TRENDING_ON]->(d:Day)\n                RETURN d.day_name, \n                       COUNT(v) as video_count,\n                       AVG(v.views) as avg_views,\n                       AVG(v.engagement_ratio) as avg_engagement\n                ORDER BY video_count DESC\n            "
+    },
+    {
+      "name": "Cross-Country Video Analysis",
+      "query": "\n                MATCH (v:Video)-[:VIDEO_TRENDING_IN_COUNTRY]->(co:Country)\n                WITH v.video_id as video_id, COLLECT(co.country_code) as countries\n                WHERE SIZE(countries) > 1\n                RETURN video_id, countries, SIZE(countries) as country_count\n                ORDER BY country_count DESC\n                LIMIT 20\n            "
+    }
+  ]
+}

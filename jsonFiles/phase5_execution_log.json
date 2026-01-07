@@ -1,0 +1,57 @@
+{
+  "start_time": "2025-11-10T00:51:58.520353",
+  "queries": [
+    {
+      "time": "2025-11-10T00:51:58.932627",
+      "description": "A.1: Top Categories",
+      "status": "success",
+      "duration_seconds": 0.225972,
+      "rows_returned": 17
+    },
+    {
+      "time": "2025-11-10T00:52:00.863725",
+      "description": "A.2: Top Channels",
+      "status": "success",
+      "duration_seconds": 0.246828,
+      "rows_returned": 20
+    },
+    {
+      "time": "2025-11-10T00:52:01.534756",
+      "description": "A.3: Videos by Country",
+      "status": "success",
+      "duration_seconds": 0.110788,
+      "rows_returned": 4
+    },
+    {
+      "time": "2025-11-10T00:52:01.917402",
+      "description": "A.4: Top Videos",
+      "status": "success",
+      "duration_seconds": 0.114818,
+      "rows_returned": 50
+    },
+    {
+      "time": "2025-11-10T00:52:02.554307",
+      "description": "A.5: Engagement by Category",
+      "status": "success",
+      "duration_seconds": 0.158351,
+      "rows_returned": 17
+    },
+    {
+      "time": "2025-11-10T00:52:03.117953",
+      "description": "A.6: Day Patterns",
+      "status": "success",
+      "duration_seconds": 0.256136,
+      "rows_returned": 7
+    }
+  ],
+  "errors": [],
+  "checkpoints": [
+    {
+      "checkpoint": "Group A Complete",
+      "time": "2025-11-10T00:52:04.120922",
+      "files_generated": 6
+    }
+  ],
+  "end_time": "2025-11-10T00:53:48.348716",
+  "status": "interrupted"
+}

@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "query": "B.1",
+      "csv": "phase5_output\\query_results\\groupB_B1_high_engagement_channels.csv",
+      "viz": "phase5_output\\visualizations\\groupB_B1_high_engagement_channels.png"
+    },
+    {
+      "query": "B.2",
+      "csv": "phase5_output\\query_results\\groupB_B2_category_by_country.csv",
+      "viz": "phase5_output\\visualizations\\groupB_B2_category_by_country.png"
+    },
+    {
+      "query": "B.3",
+      "csv": "phase5_output\\query_results\\groupB_B3_tag_cooccurrence.csv",
+      "viz": "phase5_output\\visualizations\\groupB_B3_tag_cooccurrence.png"
+    },
+    {
+      "query": "B.4",
+      "csv": "phase5_output\\query_results\\groupB_B4_cross_country_videos.csv",
+      "viz": "phase5_output\\visualizations\\groupB_B4_cross_country_videos.png"
+    },
+    {
+      "query": "B.5",
+      "csv": "phase5_output\\query_results\\groupB_B5_channel_performance.csv",
+      "viz": "phase5_output\\visualizations\\groupB_B5_channel_performance.png"
+    }
+  ],
+  "timestamp": "2025-11-10T00:59:16.139583"
+}

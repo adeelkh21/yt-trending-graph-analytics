@@ -1,0 +1,77 @@
+
+PHASE 2: DATA PREPROCESSING SUMMARY REPORT
+================================================================================
+
+Generated: 2025-11-09 15:02:48
+
+ORIGINAL DATASET:
+- Total rows: 158,098
+- Countries: 4 (US, GB, CA, IN)
+
+DATA CLEANING OPERATIONS:
+1. Missing Values:
+   - Missing descriptions filled: 3,039
+   - Rows dropped due to missing critical values: 3,039
+
+2. Duplicates:
+   - Duplicate video_id entries found: 135,442
+   - Rows removed: 107,741
+   - Remaining duplicates: 0
+
+3. Zero/Negative Values:
+   - Zeros replaced in likes: 1,509
+   - Zeros replaced in dislikes: 1,947
+   - Zeros replaced in comment_count: 3,441
+
+4. Outliers:
+   - Capped at 99th percentile for all numeric fields
+
+5. Text Cleaning:
+   - Title, description, channel_title cleaned
+   - Tags parsed into lists
+   - Average tags per video: 19.1
+
+6. Date Normalization:
+   - Dates parsed and converted to datetime
+   - Date components extracted
+   - Days to trend calculated
+
+7. Category Mappings:
+   - Category names merged successfully
+   - Country-specific mappings applied
+
+8. Derived Fields:
+   - engagement_ratio created
+   - like_dislike_ratio created
+
+FINAL DATASET:
+- Total rows: 50,357
+- Total columns: 31
+- Rows removed: 107,741 (68.15%)
+
+ROWS PER COUNTRY (After Cleaning):
+country
+CA    24427
+GB     3272
+IN    16307
+US     6351
+
+BASIC STATISTICS (After Cleaning):
+              views          likes      dislikes  comment_count
+count  5.035700e+04   50357.000000  50357.000000   50357.000000
+mean   1.064764e+06   28141.033360   1292.613275    3075.684960
+std    3.284276e+06   87971.033944   4451.979285    8819.364273
+min    5.590000e+02       1.000000      1.000000       1.000000
+25%    1.079800e+05    1065.000000     79.000000     157.000000
+50%    2.841630e+05    4395.000000    240.000000     659.000000
+75%    7.769980e+05   17791.000000    776.000000    2175.000000
+max    4.083809e+07  985482.710000  51197.810000   90062.910000
+
+DATA VALIDATION:
+- Duplicates: ✓ PASS
+- Numeric fields >= 0: ✓ PASS
+- Category names valid: ✓ PASS
+- Countries valid: ✓ PASS
+- Date components consistent: ✓ PASS
+
+================================================================================

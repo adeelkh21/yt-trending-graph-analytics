@@ -1,0 +1,234 @@
+{
+  "timestamp": "2025-11-09 22:55:49",
+  "node_counts": {
+    "Video": 50357,
+    "Channel": 8053,
+    "Category": 17,
+    "Country": 4,
+    "Tag": 268050,
+    "Day": 7
+  },
+  "relationship_counts": {
+    "VIDEO_BELONGS_TO_CATEGORY": 50357,
+    "VIDEO_PUBLISHED_BY_CHANNEL": 50357,
+    "VIDEO_TRENDING_IN_COUNTRY": 50357,
+    "VIDEO_HAS_TAG": 963063,
+    "VIDEO_TRENDING_ON": 50357,
+    "CHANNEL_HAS_VIDEO": 50357
+  },
+  "validation": {
+    "node_counts": {
+      "Video": 50357,
+      "Channel": 8053,
+      "Category": 17,
+      "Country": 4,
+      "Tag": 268050,
+      "Day": 7
+    },
+    "relationship_counts": {
+      "VIDEO_BELONGS_TO_CATEGORY": 50357,
+      "VIDEO_PUBLISHED_BY_CHANNEL": 50357,
+      "VIDEO_TRENDING_IN_COUNTRY": 50357,
+      "VIDEO_HAS_TAG": 963063,
+      "VIDEO_TRENDING_ON": 50357,
+      "CHANNEL_HAS_VIDEO": 50357
+    },
+    "video_count_match": true,
+    "sample_validation": {
+      "US": [
+        {
+          "video_id": "i04pYZGDHIc",
+          "title": "How To Make a CHINESE FRIED RICE TAKEOUT CAKE and ",
+          "category": "Howto & Style",
+          "channel": "How To Cake It",
+          "country": "US",
+          "day": "Wednesday",
+          "tag_count": 31
+        },
+        {
+          "video_id": "btE8mDfEF34",
+          "title": "Stephen A. on Cavaliers' NBA Finals Game 4: 'It wa",
+          "category": "Sports",
+          "channel": "ESPN",
+          "country": "US",
+          "day": "Monday",
+          "tag_count": 27
+        },
+        {
+          "video_id": "8XBLuU_4Qgo",
+          "title": "John Cena On His Split From Nikki Bella: \u2018I Had My",
+          "category": "News & Politics",
+          "channel": "TODAY",
+          "country": "US",
+          "day": "Monday",
+          "tag_count": 26
+        },
+        {
+          "video_id": "ACHZrvF6mTA",
+          "title": "Aubrey Plaza and Dan Stevens Hijack a Stranger's T",
+          "category": "Entertainment",
+          "channel": "Vanity Fair",
+          "country": "US",
+          "day": "Saturday",
+          "tag_count": 24
+        },
+        {
+          "video_id": "xe5tXZs-iWw",
+          "title": "Pressing Non-Newtonian Fluid Through Small Holes w",
+          "category": "Science & Technology",
+          "channel": "Hydraulic Press Channel",
+          "country": "US",
+          "day": "Tuesday",
+          "tag_count": 36
+        }
+      ],
+      "GB": [
+        {
+          "video_id": "QFfEtKvXMAs",
+          "title": "Niall Horan - Too Much To Ask (Acoustic)",
+          "category": "Music",
+          "channel": "NiallHoranVEVO",
+          "country": "GB",
+          "day": "Thursday",
+          "tag_count": 15
+        },
+        {
+          "video_id": "icyhX6PjKjM",
+          "title": "Calvin Harris, Dua Lipa - One Kiss (Behind the Sce",
+          "category": "Music",
+          "channel": "CalvinHarrisVEVO",
+          "country": "GB",
+          "day": "Sunday",
+          "tag_count": 17
+        },
+        {
+          "video_id": "6EHbZKLkeMg",
+          "title": "Laura Govan Addresses Rumors Of Pregnancy & Affair",
+          "category": "Entertainment",
+          "channel": "Breakfast Club Power 105.1 FM",
+          "country": "GB",
+          "day": "Friday",
+          "tag_count": 12
+        },
+        {
+          "video_id": "IUmdcd_8Vwc",
+          "title": "Clear Lemon Meringue Pie",
+          "category": "Howto & Style",
+          "channel": "My Virgin Kitchen",
+          "country": "GB",
+          "day": "Wednesday",
+          "tag_count": 33
+        },
+        {
+          "video_id": "T4FAg5A4wQk",
+          "title": "Ariana Grande - No Tears Left To Cry (BTS - Part 1",
+          "category": "Music",
+          "channel": "Ariana Grande`",
+          "country": "GB",
+          "day": "Tuesday",
+          "tag_count": 6
+        }
+      ],
+      "CA": [
+        {
+          "video_id": "F4wFZgjdCyw",
+          "title": "2018 CPU Nationals: Thursday (Session 3, Platform ",
+          "category": "Sports",
+          "channel": "MyStrengthBook",
+          "country": "CA",
+          "day": "Friday",
+          "tag_count": 0
+        },
+        {
+          "video_id": "qgcenfc6Qbc",
+          "title": "Superhero Movies (2017) - IHE",
+          "category": "Comedy",
+          "channel": "I Hate Everything",
+          "country": "CA",
+          "day": "Sunday",
+          "tag_count": 7
+        },
+        {
+          "video_id": "jhylspIBy8E",
+          "title": "Is Something About To Happen?",
+          "category": "Science & Technology",
+          "channel": "secureteam10",
+          "country": "CA",
+          "day": "Sunday",
+          "tag_count": 20
+        },
+        {
+          "video_id": "2Nlo2ekTRvI",
+          "title": "Everything Wrong With Cars 3 In 14 Minutes Or Less",
+          "category": "Film & Animation",
+          "channel": "CinemaSins",
+          "country": "CA",
+          "day": "Saturday",
+          "tag_count": 10
+        },
+        {
+          "video_id": "PgqHq6WjD8s",
+          "title": "Here\u2019s a Tour of a Perfect 1990 Mitsubishi Eclipse",
+          "category": "Autos & Vehicles",
+          "channel": "Doug DeMuro",
+          "country": "CA",
+          "day": "Thursday",
+          "tag_count": 16
+        }
+      ],
+      "IN": [
+        {
+          "video_id": "EzPoyn0hHlk",
+          "title": "Impatient Aashiq (2018) Telugu Film Dubbed Into Hi",
+          "category": "Film & Animation",
+          "channel": "Goldmines Premiere",
+          "country": "IN",
+          "day": "Tuesday",
+          "tag_count": 13
+        },
+        {
+          "video_id": "yeRAwhtyD3g",
+          "title": "Aa Gattununtaava Full Video Song - Rangasthalam Vi",
+          "category": "Music",
+          "channel": "Lahari Music | T-Series",
+          "country": "IN",
+          "day": "Thursday",
+          "tag_count": 20
+        },
+        {
+          "video_id": "4q8PPFep6MA",
+          "title": "Your Favorite Character | Jethalal Writes Shayari ",
+          "category": "Entertainment",
+          "channel": "Sony PAL",
+          "country": "IN",
+          "day": "Friday",
+          "tag_count": 25
+        },
+        {
+          "video_id": "suURKEjmV94",
+          "title": "Komal Prajapati | MERA KYA THA KUSHUR | New Bewafa",
+          "category": "Music",
+          "channel": "Studio Saraswati Official",
+          "country": "IN",
+          "day": "Sunday",
+          "tag_count": 23
+        },
+        {
+          "video_id": "8TA464uwEi4",
+          "title": "Veer Bhagat Singh|Kumar V|Arijit S,Sonu N,Mika,Pal",
+          "category": "Music",
+          "channel": "Zee Music Company",
+          "country": "IN",
+          "day": "Tuesday",
+          "tag_count": 22
+        }
+      ]
+    },
+    "duplicates_found": false
+  },
+  "batch_size": 1000,
+  "total_videos_processed": 50357,
+  "total_videos_expected": 50357,
+  "errors": 0,
+  "success_rate": "100.00%"
+}

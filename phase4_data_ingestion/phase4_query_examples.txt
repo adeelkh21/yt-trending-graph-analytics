@@ -1,0 +1,92 @@
+================================================================================
+PHASE 4: NEO4J QUERY EXAMPLES
+================================================================================
+
+SIMPLE QUERIES
+--------------------------------------------------------------------------------
+
+1. Top Categories by Video Count
+Query:
+MATCH (v:Video)-[:VIDEO_BELONGS_TO_CATEGORY]->(c:Category) RETURN c.category_name, COUNT(v) as video_count ORDER BY video_count DESC LIMIT 10
+
+2. Top Channels by Average Engagement
+Query:
+MATCH (ch:Channel)-[:CHANNEL_HAS_VIDEO]->(v:Video) RETURN ch.channel_title, AVG(v.engagement_ratio) as avg_engagement ORDER BY avg_engagement DESC LIMIT 10
+
+3. Videos by Country
+Query:
+MATCH (v:Video)-[:VIDEO_TRENDING_IN_COUNTRY]->(co:Country) RETURN co.country_code, COUNT(v) as video_count ORDER BY video_count DESC
+
+4. Top Videos by Views
+Query:
+MATCH (v:Video) RETURN v.video_id, v.title, v.views, v.country ORDER BY v.views DESC LIMIT 10
+
+5. Most Tagged Videos
+Query:
+MATCH (v:Video)-[:VIDEO_HAS_TAG]->(t:Tag) RETURN v.video_id, v.title, COUNT(t) as tag_count ORDER BY tag_count DESC LIMIT 10
+
+
+================================================================================
+COMPLEX QUERIES
+--------------------------------------------------------------------------------
+
+1. Channels with High Engagement Videos
+Query:
+
+                MATCH (ch:Channel)-[:CHANNEL_HAS_VIDEO]->(v:Video)
+                WHERE v.engagement_ratio > 0.1
+                RETURN ch.channel_title, 
+                       COUNT(v) as high_engagement_videos,
+                       AVG(v.engagement_ratio) as avg_engagement,
+                       AVG(v.views) as avg_views
+                ORDER BY high_engagement_videos DESC
+                LIMIT 10
+            
+
+2. Category Performance by Country
+Query:
+
+                MATCH (v:Video)-[:VIDEO_BELONGS_TO_CATEGORY]->(c:Category),
+                      (v)-[:VIDEO_TRENDING_IN_COUNTRY]->(co:Country)
+                RETURN co.country_code, 
+                       c.category_name,
+                       COUNT(v) as video_count,
+                       AVG(v.views) as avg_views,
+                       AVG(v.engagement_ratio) as avg_engagement
+                ORDER BY co.country_code, video_count DESC
+            
+
+3. Tag Co-occurrence with Categories
+Query:
+
+                MATCH (v:Video)-[:VIDEO_BELONGS_TO_CATEGORY]->(c:Category),
+                      (v)-[:VIDEO_HAS_TAG]->(t:Tag)
+                WITH c.category_name as category, t.tag_name as tag, COUNT(v) as co_count
+                WHERE co_count > 10
+                RETURN category, tag, co_count
+                ORDER BY category, co_count DESC
+                LIMIT 50
+            
+
+4. Day-of-Week Trending Patterns
+Query:
+
+                MATCH (v:Video)-[:VIDEO_TRENDING_ON]->(d:Day)
+                RETURN d.day_name, 
+                       COUNT(v) as video_count,
+                       AVG(v.views) as avg_views,
+                       AVG(v.engagement_ratio) as avg_engagement
+                ORDER BY video_count DESC
+            
+
+5. Cross-Country Video Analysis
+Query:
+
+                MATCH (v:Video)-[:VIDEO_TRENDING_IN_COUNTRY]->(co:Country)
+                WITH v.video_id as video_id, COLLECT(co.country_code) as countries
+                WHERE SIZE(countries) > 1
+                RETURN video_id, countries, SIZE(countries) as country_count
+                ORDER BY country_count DESC
+                LIMIT 20
+            
+
